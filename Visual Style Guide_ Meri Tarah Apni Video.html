@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meri Tarah Apni Video: Visual Style Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EFEDEB;--ink:#292E3B;--grey:#5B606F;--red:#9B3B36;--teal:#2CBE9A;--soft:#81D7C1;--yellow:#F3B73F;--blue:#A9C5F3;--card:#FCFAF8;--warm:#D1C3AF;--line:#292E3B;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1B1E27;--ink:#EFEDEB;--grey:#A3A8B5;--red:#E0807A;--card:#262A36;--warm:#3A3730;--line:#EFEDEB}}
+:root[data-theme="dark"]{--bg:#1B1E27;--ink:#EFEDEB;--grey:#A3A8B5;--red:#E0807A;--card:#262A36;--warm:#3A3730;--line:#EFEDEB}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Poppins','Montserrat','Segoe UI',Arial,sans-serif;font-weight:600;text-transform:uppercase;line-height:1.25;
+background-image:linear-gradient(rgba(128,128,128,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(128,128,128,.12) 1px,transparent 1px);background-size:32px 32px}
+main{max-width:760px;margin:0 auto;padding:20px 20px 64px}
+.bar{display:flex;align-items:center;gap:8px;color:var(--grey);font-size:12px;font-weight:800;letter-spacing:.06em}
+.bar i{width:10px;height:10px;border-radius:50%;background:var(--teal)}
+.bar span:last-child{margin-left:auto}
+.lab{color:var(--grey);font-size:clamp(14px,3.4vw,20px);font-weight:800;margin:0}
+h1,h2{margin:0;font-weight:800;color:var(--ink);line-height:1.05}
+h1{font-size:clamp(34px,10vw,72px)}
+h2{font-size:clamp(26px,7vw,44px)}
+.red{color:var(--red)}
+.ul{height:6px;width:min(260px,60%);border-radius:3px;background:linear-gradient(90deg,var(--teal),var(--soft));margin-top:12px}
+section{margin-top:56px}
+.hero{margin-top:48px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:20px}
+.sw{border:2px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card);box-shadow:3px 3px 0 rgba(41,46,59,.18)}
+.sw b{display:block;height:64px}
+.sw div{padding:8px 10px;font-size:11px;font-weight:800}
+.sw small{display:block;color:var(--grey);font-size:10px;font-weight:600;margin-top:2px}
+.note{margin-top:20px;font-size:13px;color:var(--grey);font-weight:600;text-transform:none;line-height:1.55}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.chip{border:2px solid var(--line);border-radius:10px;padding:8px 16px;font-weight:800;font-size:14px;color:#292E3B;box-shadow:3px 3px 0 rgba(41,46,59,.3)}
+.chip:nth-child(1){background:var(--yellow);transform:rotate(-3deg)}
+.chip:nth-child(2){background:var(--teal);transform:rotate(2deg)}
+.chip:nth-child(3){background:var(--blue);transform:rotate(-1.5deg)}
+.pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.pill{border-radius:999px;padding:10px 20px;font-weight:800;font-size:13px;color:#fff;background:var(--teal)}
+.pill.d{background:#292E3B}
+.input{margin-top:20px;display:flex;align-items:center;gap:12px;background:#FCFAF8;border:2px solid #292E3B;border-radius:999px;padding:8px 8px 8px 22px;color:#8a8e99;font-weight:600;max-width:360px}
+.input span{margin-left:auto;width:36px;height:36px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-size:18px}
+.frame{margin-top:20px;border:2px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;transform:rotate(-1.2deg);box-shadow:6px 8px 0 rgba(41,46,59,.18)}
+.top{background:#292E3B;padding:8px 12px;display:flex;align-items:center;gap:6px}
+.top i{width:9px;height:9px;border-radius:50%;background:#8a8e99}
+.top i:nth-child(3){background:var(--teal)}
+.top em{margin-left:10px;font-style:normal;background:#3d4352;color:#EFEDEB;border-radius:999px;padding:2px 12px;font-size:10px;font-weight:600;text-transform:none}
+.frame p{margin:0;padding:28px 16px;text-align:center;color:var(--grey);font-size:12px}
+ul.rules{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+ul.rules li{border-left:6px solid var(--teal);background:var(--card);padding:10px 14px;font-size:13px;border-radius:0 10px 10px 0;text-transform:none;font-weight:600;line-height:1.5}
+ul.rules b{text-transform:uppercase;font-weight:800}
+.scenes{margin-top:20px;display:grid;gap:8px}
+.sc{display:flex;gap:14px;align-items:baseline;background:var(--card);border:2px solid var(--line);border-radius:10px;padding:10px 14px;font-size:13px;font-weight:800}
+.sc time{color:var(--teal);flex:none;width:48px}
+.warm{background:var(--warm);margin:56px -20px 0;padding:36px 20px}
+pre{margin:16px 0 0;background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:12px;padding:16px;font:500 12.5px/1.6 ui-monospace,Menlo,Consolas,monospace;text-transform:none;white-space:pre-wrap;word-break:break-word}
+button{margin-top:16px;font:inherit;font-size:13px;font-weight:800;text-transform:uppercase;border:2px solid #292E3B;background:var(--yellow);color:#292E3B;border-radius:999px;padding:12px 22px;cursor:pointer;box-shadow:3px 3px 0 rgba(41,46,59,.3)}
+button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+button:active{transform:translate(2px,2px);box-shadow:none}
+footer{margin-top:48px;text-align:center;color:var(--grey);font-size:12px;font-weight:800}
+</style>
+</head>
+<body>
+<main>
+<div class="bar"><i></i><span>VIDEO GUIDE ....</span><span>00:24 / 00:24</span></div>
+
+<header class="hero">
+<p class="lab">MERI TARAH APNI VIDEO</p>
+<h1>VISUAL<br><span class="red">STYLE</span> GUIDE</h1>
+<div class="ul"></div>
+<p class="note">Is style me video banane ke liye: colors, layout, text, buttons, animation aur ek copy-paste prompt. By ZAIX YT.</p>
+</header>
+
+<section>
+<p class="lab">PAGE 1</p>
+<h2>COLORS + <span class="red">FONT</span></h2>
+<div class="ul"></div>
+<div class="grid">
+<div class="sw"><b style="background:#EFEDEB"></b><div>Background #EFEDEB<small>Light grid, scenes 1-2, 4-5</small></div></div>
+<div class="sw"><b style="background:#D1C3AF"></b><div>Warm bg #D1C3AF<small>Scene 3 (cards) + faded end</small></div></div>
+<div class="sw"><b style="background:#292E3B"></b><div>Dark navy #292E3B<small>Title, bars, outlines</small></div></div>
+<div class="sw"><b style="background:#9B3B36"></b><div>Keyword red #9B3B36<small>Highlight word (KARO, COMMENT)</small></div></div>
+<div class="sw"><b style="background:#2CBE9A"></b><div>Teal accent #2CBE9A<small>Dots, buttons, send arrow</small></div></div>
+<div class="sw"><b style="background:#81D7C1"></b><div>Soft teal #81D7C1<small>Underline under title</small></div></div>
+<div class="sw"><b style="background:#F3B73F"></b><div>Yellow #F3B73F<small>PROMPT chip, Voice card</small></div></div>
+<div class="sw"><b style="background:#A9C5F3"></b><div>Light blue #A9C5F3<small>SCRIPT chip, Style card</small></div></div>
+<div class="sw"><b style="background:#FCFAF8"></b><div>Card white #FCFAF8<small>Browser window body</small></div></div>
+</div>
+<ul class="rules">
+<li><b>Font:</b> Bold geometric sans (Poppins ExtraBold / Montserrat ExtraBold / Outfit Bold). Sab kuch CAPS me, heavy weight.</li>
+<li>Chhota label grey, bada title dark navy, aur ek keyword red me.</li>
+<li>Size ratio: chhota label : title = 1 : 2.5. Line spacing tight. Neeche teal gradient underline.</li>
+</ul>
+<p class="lab" style="margin-top:24px">BAS 3 CHEEZ</p>
+<h2>PASTE<br><span class="red">KARO</span></h2>
+<div class="ul"></div>
+</section>
+
+<section>
+<p class="lab">PAGE 2</p>
+<h2>LAYOUT <span class="red">(16:9)</span></h2>
+<div class="ul"></div>
+<div class="frame"><div class="top"><i></i><i></i><i></i><em>claude.ai</em></div><p>Browser mockup, 1-2 degree tilt</p></div>
+<ul class="rules">
+<li><b>Top bar:</b> Left: teal dot + "VIDEO GUIDE ...." (grey, caps). Right: timer "00:16 / 00:24".</li>
+<li><b>Left side (35%):</b> 3-line text block: chhota grey label, bada dark title, red keyword + teal underline.</li>
+<li><b>Right side (60%):</b> Browser mockup (claude.ai), thoda tilt (1-2 degree), thick dark outline, soft shadow.</li>
+<li><b>Background:</b> Halka grid pattern, soft vignette. Scene 3 me warm beige.</li>
+</ul>
+</section>
+
+<section>
+<p class="lab">PAGE 3</p>
+<h2>BUTTONS + <span class="red">MOTION</span></h2>
+<div class="ul"></div>
+<div class="chips"><span class="chip">PROMPT</span><span class="chip">VOICE</span><span class="chip">SCRIPT</span></div>
+<p class="note">Chips: rounded box, 2px dark outline, flat color, thoda shadow. Har chip thoda alag angle par.</p>
+<div class="pills"><span class="pill">FOLLOW</span><span class="pill d">DM SENT</span></div>
+<p class="note">Pill buttons: teal (Follow, CTA) aur dark navy (DM Sent). Chhota icon left me.</p>
+<div class="input">Ask Claude... <span>&#8593;</span></div>
+<p class="note">Input bar: white pill, grey placeholder, teal round send button.</p>
+<ul class="rules">
+<li><b>Text:</b> type-on ho (CLA... then CLAUDE SE), cursor blink.</li>
+<li><b>Browser window:</b> slide + pop in; chips ek-ek karke bounce ke saath aate hain.</li>
+<li><b>Scene change:</b> bg color smooth fade (grey grid to beige).</li>
+<li><b>Timer:</b> 00:01 se 00:24 tak chalta rehta hai (top right).</li>
+<li><b>Last:</b> BIG faded "BYE." + chhota "Replay ke liye tap karo".</li>
+</ul>
+<h2 style="margin-top:36px;font-size:clamp(20px,5vw,30px)">SCENES (24 SEC)</h2>
+<div class="scenes">
+<div class="sc"><time>00:01</time><span>MERI TARAH / APNI VIDEO / CLAUDE SE</span></div>
+<div class="sc"><time>00:05</time><span>Video card + "YE GUIDE TUMHARE LIYE"</span></div>
+<div class="sc"><time>00:09</time><span>IS GUIDE ME TUMHE MILEGA: Voice + Style Prompt cards</span></div>
+<div class="sc"><time>00:13</time><span>BAS 3 CHEEZ PASTE KARO: PROMPT chip</span></div>
+<div class="sc"><time>00:17</time><span>VOICE + SCRIPT chips, "VIDEO READY"</span></div>
+<div class="sc"><time>00:21</time><span>GUIDE CHAHIYE? FOLLOW + COMMENT, DM SENT</span></div>
+<div class="sc"><time>00:24</time><span>BYE.</span></div>
+</div>
+</section>
+
+<div class="warm">
+<p class="lab">PAGE 4</p>
+<h2>COPY-PASTE <span class="red">PROMPT</span></h2>
+<div class="ul"></div>
+<p class="note">Ye prompt Claude me paste karo, phir apni script aur voice saath me daal do.</p>
+<pre id="p">Make a 24-second 16:9 explainer video (HTML animation) in this exact style:
+BACKGROUND: very light grey (#EFEDEB) with a faint square grid and soft vignette. One scene uses warm beige (#D1C3AF).
+TOP BAR: left = small teal dot + "VIDEO GUIDE ...." in bold grey caps. Right = running timer "00:01 / 00:24".
+TEXT (left side): 3 lines, all CAPS, very bold geometric sans (Poppins ExtraBold). Small grey label (#5B606F), big dark navy title (#292E3B), one keyword in red (#9B3B36). Soft teal gradient underline (#81D7C1) under the text. Text types on letter by letter.
+RIGHT SIDE: a flat claude.ai browser mockup, slightly tilted, thick 2px dark outline (#292E3B), soft drop shadow, dark top bar with 3 dots (last one teal) and a "claude.ai" pill.
+ELEMENTS: chips with thick outline and flat colors: PROMPT yellow (#F3B73F), VOICE teal (#2CBE9A), SCRIPT light blue (#A9C5F3). White pill input "Ask Claude..." with teal send button. Teal pill CTA buttons and a dark navy "DM SENT" pill.
+MOTION: elements pop in with a small bounce, scenes cross-fade, cursor blinks. End with a giant faded "BYE." and small text "Replay ke liye tap karo".
+SCRIPT AND VOICE: use the script I paste below and sync scene changes to it.</pre>
+<button id="b" type="button">Prompt copy karo</button>
+</div>
+
+<footer>BY ZAIX YT</footer>
+</main>
+<script>
+document.getElementById('b').addEventListener('click',function(){
+  var t=document.getElementById('p').innerText,btn=this;
+  function ok(){btn.textContent='Copy ho gaya';setTimeout(function(){btn.textContent='Prompt copy karo'},1800)}
+  try{navigator.clipboard.writeText(t).then(ok,fallback)}catch(e){fallback()}
+  function fallback(){
+    try{var r=document.createRange();r.selectNodeContents(document.getElementById('p'));var s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');ok()}catch(e){}
+  }
+});
+</script>
+</body>
+</html>
